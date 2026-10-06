@@ -59,17 +59,28 @@ footer{flex-direction:column;gap:10px}
     <div class="shop-title">THE COLLECTION</div>
 
     <div class="products">
+<div class="product">
 
-        <div class="product">
-            <div class="product-image">
-                <span>CAP</span>
-            </div>
-            <div class="product-info">
-                <h2>HØK CAP</h2>
-                <p>COMING SOON</p>
-                <a href="#" class="product-button">VIEW PRODUCT</a>
-            </div>
+    <div class="cap-gallery">
+
+        <img id="cap-main-image" src="hok-cap-front.png" alt="HØK Cap">
+
+        <div class="cap-controls">
+            <button onclick="changeCap('hok-cap-front.png')">FRONT</button>
+            <button onclick="changeCap('hok-cap-back.png')">BACK</button>
+            <button onclick="changeCap('hok-cap-left.png')">LEFT</button>
+            <button onclick="changeCap('hok-cap-right.png')">RIGHT</button>
         </div>
+
+    </div>
+
+    <div class="product-info">
+        <h2>HØK CAP</h2>
+        <p>HEART OF KHAOS — LIMITED CONCEPT</p>
+        <a href="#" class="product-button">VIEW PRODUCT</a>
+    </div>
+
+</div>
 
         <div class="product">
             <div class="product-image">
@@ -115,5 +126,10 @@ footer{flex-direction:column;gap:10px}
 </section>
 
 <footer><span>HØK — HEART OF KHAOS</span><span>© 2026 HØK</span></footer>
+    <script>
+function changeCap(image) {
+    document.getElementById("cap-main-image").src = image;
+}
+</script>
 </body>
 </html>
